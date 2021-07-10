@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/img/logo.png">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/font/css/all.min.css">
+
+    <title>Website Solution</title>
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="brand">
+            <img src="assets/img/logo.png" alt="Rahmsol">
+            <h3>RahmSol</h3>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li class="icon"><img src="assets/img/logo.png" alt=""> <span>RahmSol</span></li>
+                <li><a href="#home" class="home active">HOME</a></li>
+                <li><a href="#about" class="about">ABOUT</a></li>
+                <li><a href="#experience" class="experience">EXPERIENCE</a></li>
+                <li><a href="#service" class="service">SERVICE</a></li>
+                <li><a href="#contact" class="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Akhir Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Content -->
+        <div class="content">
+            <!-- Jumbotron -->
+            <article class="jumbotron isi" id="home" data-scroll="home">
+                <div class="poster">
+                    <h1>Website Development</h1>
+                    <h2>Solusi Website Masa Kini</h2>
+                    <p>Buat solusi tepat untuk membangun sebuah website dengan mudah dan cepat bersama kami.</p>
+                    <a href="#about">Info Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <img src="assets/img/banner.png" alt="">
+            </article>
+            <!-- Akhir Jumbotron -->
+
+            <!-- About -->
+            <article id="about" class="isi" data-scroll="about">
+                <h2 class="judul">Tentang Kami</h2>
+                <hr class="garis">
+                <div class="tentang">
+                    <img src="assets/img/about.svg" alt="">
+                    <p>Kami merupakan sebuah komunitas pembuatan website yang siap membantu menyelesaikan masalah pada perusahaan anda dalam bidang website serta dapat membantu mengoptimasikan perusahaan anda melalui website.</p>
+                </div>
+            </article>
+            <!-- Akhir About -->
+
+            <!-- Experience -->
+            <article id="experience" class="isi" data-scroll="experience">
+                <h2 class="judul">Keahlian Kami</h2>
+                <hr class="garis">
+                <div class="keahlian">
+                    <img src="assets/img/wp.png" alt="">
+                    <img src="assets/img/joomla.png" alt="">
+                    <img src="assets/img/laravel.png" alt="">
+                    <img src="assets/img/ci.png" alt="">
+                    <img src="assets/img/node.png" alt="">
+                </div>
+            </article>
+            <!-- Akhr Experience -->
+
+            <!-- Servicee -->
+            <article id="service" class="isi" data-scroll="service">
+                <h2 class="judul">Jasa Kami</h2>
+                <hr class="garis">
+                <section>
+                    <img src="assets/img/landing.svg" alt="landing page">
+                    <div class="produk">
+                        <h3>Pembuatan Landing Page</h3>
+                        <p>Kami dapat membantu membuatkan landing page atau biasa disebut tampilan home pada website perusahaan anda yang menarik dan responsive tentunya.</p>
+                    </div>
+                </section>
+                <section>
+                    <img src="assets/img/company.svg" alt="Company Profile">
+                    <div class="produk">
+                        <h3>Pembuatan Company Profile</h3>
+                        <p>Kami dapat membantu membuatkan sebuah website company profile agar perusahaan anda lebih terlihat profesional.</p>
+                    </div>
+                </section>
+                <section>
+                    <img src="assets/img/toko.svg" alt="Company Profile">
+                    <div class="produk">
+                        <h3>Pembuatan Toko Online</h3>
+                        <p>Kami dapat membantu membuatkan sebuah toko online untuk membantu memasarkan produk usaha untuk meningkatkan pendapatan perusahaan anda.</p>
+                    </div>
+                </section>
+                <section>
+                    <img src="assets/img/webapps.svg" alt="Company Profile">
+                    <div class="produk">
+                        <h3>Pembuatan Web Apps</h3>
+                        <p>Kami dapat membantu membuatkan sebuah aplikasi berbasis web untuk memantu dalam administrasi perusahaan anda.</p>
+                    </div>
+                </section>
+            </article>
+            <!-- Akhir Service -->
+        </div>
+        <!-- Akhir Content -->
+
+        <!-- Aside Berisi Identitas -->
+        <aside>
+            <article id="contact" class="isi" data-scroll="contact">
+                <h2 class="judul">Kontak</h2>
+                <hr class="garis">
+                <img src="assets/img/foto.jpg" alt="Rahmat Soleh">
+                <h3>Rahmat Soleh</h3>
+                <p>solehr619@gmail.com</p>
+                <button type="button" class="kirim">Kirim Pesan <i class="fab fa-telegram-plane"></i></button>
+            </article>
+            <article class="message d-none">
+                <div class="container">
+                    <h2>Kirimkan pesan untuk kami</h2>
+                    <hr>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" name="nama" id="nama" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="telepon">Telepon</label>
+                            <input type="number" name="telepon" id="telepon" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea name="pesan" id="pesan" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="cancel">Cancel</button>
+                            <button type="submit" class="submit" onclick="return alert('Terima kasih pesan anda telah kami terima.');">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </aside>
+        <!-- Akhir Asside -->
+    </main>
+    <footer>
+        <h3>Rahmat Soleh | Front End Web Developer</h3>
+        <p>dicoding _ indosat IdCamp 2021</p>
+    </footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

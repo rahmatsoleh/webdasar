@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --blue-dark: #053aaa;
+    --blue: #2067ff;
+    --blue-light : #a2c0ff;
+    --blue-white: #e2edff;
+    --secondary: #ddd;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+
+/* Brand */
+.brand {
+    display: flex;
+    align-items: center;
+}
+.brand img {
+    width: 50px;
+    display: inline-block;
+    margin-right: .5em;
+}
+
+.brand h3 {
+    color: var(--blue-dark);
+    font-size: 2.5em;
+    display: inline-block;
+}
+
+/* Akhir brand */
+
+/* Navbar */
+nav {
+    width: 100%;
+    z-index: 9;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul img {
+    width: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #0082e6;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.active,
+nav ul li a:hover {
+    color: white;
+    background-color: var(--blue);
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul .icon {
+    display: none;
+}
+
+#check {
+    display: none;
+
+}
+/* Akhir Navbar */
+
+/* Akhir Header */
+
+/* Main */
+/* Content */
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.jumbotron .poster h1 {
+    /* margin-top: -.5em; */
+    color: var(--blue);
+    font-size: 4em;
+}
+
+.jumbotron .poster h2 {
+    color: var(--blue-dark);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.jumbotron .poster {
+    width: 30%;
+}
+
+.jumbotron .poster p {
+    margin: 3em 0;
+    font-size: 1.2em;
+    color: #777;
+}
+
+.jumbotron .poster a {
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    padding: 1em 3em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+}
+
+.jumbotron .poster a:hover {
+    background-color: blue;
+}
+
+
+.jumbotron img {
+    margin-top: 10em;
+    width: 60%;
+    height: fit-content;
+    display: inline-block;
+}
+/* Akhir Content */
+
+/* About */
+#about, #service {
+    background-color: #eee;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.judul {
+    text-transform: uppercase;
+    color: var(--blue-dark);
+    text-align: center;
+    font-size: 2em;
+}
+
+.garis {
+    width: 100px;
+    margin: 5px auto;
+    height: 3px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+#about .tentang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin: 50px auto;
+}
+
+.tentang img {
+    width: 300px;
+    margin: 0 50px;
+}
+
+.tentang p {
+    width: 30vmax;
+    color: var(--blue-dark);
+    font-size: 1.5em;
+}
+/* Akhir About */
+
+/* Experience */
+#experience {
+    padding: 100px;
+}
+.keahlian {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.keahlian img {
+    width: 100px;
+    margin: 20px;
+    height: auto;
+}
+/* Akhir Experience */
+
+/* Service */
+#service section {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+}
+
+#service section:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+#service section img {
+    width: 300px;
+    margin: 0 50px;
+}
+
+#service section h3 {
+    color: var(--blue-dark);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#service section p {
+    color: #333;
+    font-size: 1.1em;
+}
+/* Akhir Service */
+
+/* Kontak */
+#contact {
+    padding: 100px;
+    text-align: center;
+}
+
+#contact img {
+    width: 200px;
+    margin: 50px 0 20px;
+    border: 7px solid var(--secondary);
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+#contact h3 {
+    text-transform:uppercase;
+    font-size: 2em;
+    color: var(--blue);
+}
+
+#contact p {
+    font-size: 1.5em;
+    color: #888;
+    margin-bottom: 1em;
+}
+
+#contact button {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: var(--blue);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+}
+
+#contact button:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+.message {
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message .container {
+    width: 40%;
+}
+
+.message .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-control {
+    display: block;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px;
+}
+
+.modal-footer {
+    margin-top: 1em;
+    text-align: end;
+}
+
+.modal-footer button {
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid var(--secondary);
+}
+
+.modal-footer button:hover {
+    cursor: pointer;
+}
+
+.submit {
+    color: white;
+    background-color: var(--blue);
+}
+
+.d-none {
+    display: none;
+}
+
+/* Akhir Kontak */
+
+/* Akhir Main */
+
+
+/* Footer */
+footer {
+    background-color: var(--blue-dark);
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+}
+/* Akhir Footer */
+
+
+
+
+
+
+/* Responsive Breakpoint */
+
+@media screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn i {
+        background-color: var(--blue);
+        padding: .3em .6em;
+        border-radius: 10px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background-color: #2c3e50;
+        top: 0;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    nav ul .icon {
+        display: block;
+    }
+
+    nav ul li i,
+    nav ul li span {
+        display: block;
+        font-size: 40px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+
+    nav ul li a:hover,
+    .active {
+        background-color: #2c3e50;
+        color: var(--blue-white);
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .jumbotron .poster p {
+        margin: 0;
+        display: none;
+    }
+
+    .jumbotron .poster h1 {
+        margin-top: -1.5em;
+        margin-bottom: .2em;
+        line-height: .9em;
+    }
+
+    .jumbotron .poster h2 {
+        margin-bottom: 2em;
+    }
+
+    .jumbotron .poster a {
+        padding: 1em 2em;
+    }
+
+    /* About */
+    .tentang img {
+        margin: 0;
+    }
+    .tentang p {
+        width: 80vw;
+        margin: 1em auto;
+        text-align: center;
+    }
+
+    main #about,
+    main #experience,
+    main #service,
+    aside #contact
+    {
+        padding: 120px 1em;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 768px){
+    .jumbotron {
+        background-image: url(../img/banner.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+
+    .jumbotron .poster {
+        text-align: center;
+        margin-top: 7em;
+        width: 100%;
+        height: auto;
+    }
+
+    .jumbotron .poster p {
+        display: block;
+        width: 70%;
+        margin: -2em auto 7em;
+        color: var(--blue-dark);
+    }
+    .jumbotron img {
+        display: none;
+    }
+
+    #service section {
+        width: 100%;
+    }
+
+    #service section img {
+        width: 200px;
+        margin: 0 30px;
+    }
+
+    .message h2,
+    .form-control,
+    .form-group label,
+    .modal-footer button {
+        font-size: 1em;
+    }
+
+    .modal-footer button {
+        width: 80px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+    .checkbtn i {
+        padding: .2em .4em;
+    }
+    
+    .jumbotron .poster h1 {
+        font-size: 2em;
+    }
+
+    .jumbotron .poster h2{
+        font-size: 1.5em;
+    }
+
+    .jumbotron .poster p {
+        font-size: 1em;
+    }
+    
+    /* About */
+    .judul {
+        font-size: 1.5em;
+    }
+    .tentang img {
+        width: 200px;
+    }
+    .tentang p {
+        font-size: 1em;
+    }
+
+    #service section img {
+        width: 200px;
+        margin: 0 auto 1em;
+    }
+
+    #service section:nth-child(odd),
+    #service section:nth-child(even)
+    {
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+
+    #contact img {
+        width: 150px;
+        margin-top: 20px;
+        border-width: 5px;
+    }
+
+    #contact h3 {
+        font-size: 1.5em;
+    }
+
+    #contact p {
+        font-size: 1em;
+    }
+
+    .message .container {
+        width: 80%;
+    }
+}
